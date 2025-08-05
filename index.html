@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monad community marriage</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="confetti-container"></div>
+
+    <div class="main-wrapper">
+        <main class="flex-grow flex items-center justify-center">
+            <div id="app-container" class="w-full max-w-md mx-auto text-center">
+
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-black tracking-tight" style="color: var(--primary-lavender);">
+                        Monad Community Marriage
+                    </h1>
+                    <div class="mt-6">
+                        <p class="text-xl text-gray-200">Find Your Monad Soulmate</p>
+                        <p class="mt-2 text-md text-gray-400">Enter your X username to find your match</p>
+                    </div>
+
+                    <div class="mt-10">
+                        <input type="text" id="username-input" placeholder="@ Your X Username" class="custom-input w-full px-4 py-3 rounded-lg text-center text-lg placeholder-gray-400">
+                        <button id="find-match-btn" class="btn btn-primary w-full mt-6 py-3 rounded-lg text-xl font-bold flex items-center justify-center">
+                            <span id="btn-text">Click to get married</span>
+                            <svg id="btn-spinner" class="animate-spin -mr-1 ml-3 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                     <p id="error-message" class="text-red-400 mt-4 h-5"></p>
+                </div>
+
+                <div id="results-container" class="hidden mt-12">
+                    <div id="match-card" class="glass-card p-6 sm:p-8 rounded-2xl w-full flex flex-col items-center text-center min-h-[320px] justify-center">
+                        <p class="text-lg text-gray-300">Your Monad soulmate is...</p>
+                        <h2 id="matched-username" class="text-4xl font-bold my-4 break-all" style="color: var(--primary-lavender);">&nbsp;</h2>
+
+                        <div id="result-details" class="opacity-0 transition-opacity duration-1000">
+                            <p id="match-title" class="text-2xl font-bold"></p>
+                            <p id="match-description" class="text-gray-300 mt-2 max-w-xs"></p>
+                            <p id="compatibility-score" class="text-xl mt-4 font-semibold"></p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 w-full">
+                        <button id="share-btn" class="btn btn-primary w-full py-3 rounded-lg text-lg font-bold flex flex-col items-center">
+                            <span>Share on X</span>
+                            <span class="text-xs font-normal text-gray-200 mt-1">Let the Monad community celebrate your marriage</span>
+                        </button>
+                        <button id="try-again-btn" class="btn btn-secondary w-full mt-4 py-3 rounded-lg text-lg font-semibold">
+                            Divorce and try again!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center py-4 text-sm text-gray-400">
+            <p>The idea of the tool from: <a href="https://x.com/God_f_a_ther" target="_blank" rel="noopener noreferrer" class="font-semibold hover:text-primary-lavender" style="color: var(--accent-purple);">@God_f_a_ther</a></p>
+            <p class="mt-1">Made with 💜 by <a href="https://x.com/YahyaOsi" target="_blank" rel="noopener noreferrer" class="font-semibold hover:text-primary-lavender" style="color: var(--accent-purple);">@YahyaOsi</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
