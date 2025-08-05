@@ -25,7 +25,7 @@ const communityMembers = [
 const matchTiers = {
     legendary: { title: "Monad Pair ✨💜", description: "A magical connection with unstoppable Monad energy and vibes, you two shine like a power couple.", color: "#FFD700" },
     epic: { title: "Purple Protocol Pair 🔮", description: "Both of you hold your love strong, no paper hands here.", color: "#00C9FF" },
-    rare: { title: "Monad Makers 🏗", description: "You both want to build something amazing on Monad, maybe even a little baby?", color: "#E0B1CB" },
+    rare: { title: "Monad Makers 💜", description: "You both want to build something amazing on Monad, maybe even a little baby?", color: "#E0B1CB" },
     uncommon: { title: "Just Friends? 💜", description: "You both laugh at the same memes and vibe with Monad. Just friends? Yeah, sure, keep telling yourself that.", color: "#39FF14" },
     common: { title: "Mystic Tangle 🌸", description: "Charts look like they just lost a game, but hey, love might still win this round.", color: "#FF4500" }
 };
@@ -185,4 +185,5 @@ function startConfetti() {
  */
 function stopConfetti() {
     confettiContainer.innerHTML = '';
+
 }
